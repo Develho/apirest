@@ -1,0 +1,122 @@
+{
+  "info": {
+    "name": "Tarefas API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_postman_id": "a1111111-b222-4c33-8d44-eeeeffff0001"
+  },
+  "item": [
+    {
+      "name": "Criar tarefa",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"nome\": \"Estudar Spring\", \"dataEntrega\": \"2025-09-30\", \"responsavel\": \"Adriano\"}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/tarefas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "tarefas"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Listar tarefas",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8080/api/tarefas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "tarefas"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Obter tarefa por ID",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8080/api/tarefas/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "tarefas",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Atualizar tarefa",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"nome\": \"Estudar Spring Boot\", \"dataEntrega\": \"2025-10-15\", \"responsavel\": \"Adriano\"}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/tarefas/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "tarefas",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Remover tarefa",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "http://localhost:8080/api/tarefas/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "tarefas",
+            "1"
+          ]
+        }
+      }
+    }
+  ]
+}

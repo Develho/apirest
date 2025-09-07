@@ -1,0 +1,8 @@
+-- Opcional: se preferir controlar a criação da tabela manualmente,
+-- mude o ddl-auto para 'none' no application.properties e use este script.
+-- CREATE TABLE tarefas (
+--   id BIGINT PRIMARY KEY AUTO_INCREMENT,
+--   nome VARCHAR(255) NOT NULL,
+--   data_entrega DATE NOT NULL,
+--   responsavel VARCHAR(255) NOT NULL
+-- );
